@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #061423;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.navbar-vertical {
+    width: 250px;
+    height: 100vh;
+    background-color: #0a1f36;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1030;
+}
+.navbar-vertical .nav-link {
+    color: #cfd9e6;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.navbar-vertical .nav-link i {
+    margin-right: 10px;
+}
+.navbar-vertical .nav-link:hover,
+.navbar-vertical .nav-link.active {
+    color: #4da3ff;
+    background-color: #113459;
+    border-color: #4da3ff;
+}
+.navbar-vertical .navbar-brand {
+    color: #cfd9e6;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.sign-out {
+    margin-top: auto;
+    width: 100%;
+}
+.sign-out .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-out .btn i {
+    margin-right: 8px;
+}
+.content {
+    margin-left: 270px;
+    padding: 30px;
+    background-color: #061423;
+    min-height: 100vh;
+}
+.card-custom1 {
+    background-color: #102a45;
+    border: 1px solid #21486b;
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.card-custom{
+    border-radius: 12px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.card-custom1:hover {
+    transform: translateY(-5px);
+    background-color: #153556;
+    border-color: #4da3ff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+@media (max-width: 992px) {
+    .navbar-vertical {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
